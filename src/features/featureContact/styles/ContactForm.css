@@ -1,0 +1,30 @@
+.bgImage{
+    /* background-color: gray; */
+    background-image: url("../../../assets/bgImgForm.avif");
+    background-repeat: no-repeat;
+    background-size: 852px 350px;
+    background-position: center;
+    width: 67%;
+    height: 40vh;
+    padding: auto;
+    margin: auto;
+}
+.containerForm{
+    border: solid lightgray 1px;
+    width: 67%;
+    padding: auto;
+    margin: auto;
+}
+.formTop{
+    margin-top: 5%;
+}
+
+@media (min-width: 1280px) {
+    .bgImage{
+    /* background-color: gray; */
+    height: 50vh;
+    background-size: 100% 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+}

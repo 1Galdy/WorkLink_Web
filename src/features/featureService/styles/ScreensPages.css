@@ -1,0 +1,34 @@
+.topPagesService{
+    margin-top: 5%;
+    /* background-color: green; */
+    width: 50%;
+}
+.flexService{
+    display: flex;
+}
+.DetailsServices{
+    /* background-color: red; */
+    width: 50%;
+}
+.DetailsServices > ul {
+    /* background-color: gray; */
+    padding: 0;
+}
+.list-item{
+    display: flex;
+    flex-direction: row;
+}
+.ImageService{
+    /* background-color: purple; */
+    width: 50%;
+    height: 50vh;
+}
+.ImageService > img {
+    margin-top: 4%;
+    width: 95%;
+    height: 94%;
+    margin-left: 2%;
+    /* object-fit: contain;       Affiche toute l'image sans la couper */
+    /* object-position: center;   Centre l'image dans son conteneur */
+    /* display: block;            Supprime les espaces blancs sous l'image */
+}

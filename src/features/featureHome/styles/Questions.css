@@ -1,0 +1,43 @@
+.questionListe {
+  border-bottom: solid lightgray 1px;
+  padding-bottom: 1%;
+  width: 60%;
+  margin: auto;
+  padding: auto;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  /* background-color: #f0f0f0; */
+  font-weight: bold;
+  list-style: none;
+  width: 100%;
+  /* padding: 0.5em 1em; */
+}
+
+/* Cache la flèche native */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* S'assure que le texte prend tout l'espace dispo à gauche */
+summary span {
+  flex-grow: 1;
+  text-align: left;
+}
+
+/* Flèche à droite */
+summary::after {
+  content: '▶';
+  transition: transform 0.3s;
+  margin-left: 1em;
+  flex-shrink: 0;
+}
+
+/* Flèche tournée quand ouvert */
+details[open] summary::after {
+  transform: rotate(90deg);
+}
