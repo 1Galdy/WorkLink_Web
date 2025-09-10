@@ -1,4 +1,11 @@
-.centerText{
+/* .centerText{
     padding: auto;
     margin: auto;
+} */
+
+.marginPolitique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
 }

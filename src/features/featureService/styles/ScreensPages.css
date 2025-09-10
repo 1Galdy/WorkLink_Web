@@ -1,15 +1,20 @@
 .topPagesService{
     margin-top: 5%;
     /* background-color: green; */
-    width: 50%;
+    width: 85%;
 }
 .flexService{
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 36vh;
 }
 .DetailsServices{
     /* background-color: red; */
-    width: 50%;
+    width: 46%;
 }
+
 .DetailsServices > ul {
     /* background-color: gray; */
     padding: 0;
@@ -20,13 +25,14 @@
 }
 .ImageService{
     /* background-color: purple; */
+    /* padding: 1%; */
     width: 50%;
-    height: 50vh;
+    height: 100%;
 }
 .ImageService > img {
-    margin-top: 4%;
-    width: 95%;
-    height: 94%;
+    margin-top: 1.6%;
+    width: 96%;
+    height: 95%;
     margin-left: 2%;
     /* object-fit: contain;       Affiche toute l'image sans la couper */
     /* object-position: center;   Centre l'image dans son conteneur */

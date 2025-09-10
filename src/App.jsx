@@ -12,6 +12,7 @@ import Home from './features/featureHome/Home';
 import Service from './features/featureService/Services';
 import Tarifs from './features/featureTarifs/Tarifs';
 import Contact from './features/featureContact/Contact';
+import Index from './screen';
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Index />} />
+          <Route path="/home" element={<Home />} />
           <Route path='/services' element={<Service/>} />
           <Route path='/tarifs' element={<Tarifs />} />
           <Route path='/contact' element={<Contact />} />

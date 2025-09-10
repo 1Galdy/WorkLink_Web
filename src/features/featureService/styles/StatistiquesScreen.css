@@ -1,0 +1,21 @@
+.containerStatistique{
+    /* background-color: red; */
+    width: 85%;
+    padding: auto;
+    margin: auto;
+    margin-top: 8%;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; */
+}
+.containerStatistique > h2 {
+    text-align: center;
+}
+.importCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: space-between;
+}
