@@ -1,38 +1,62 @@
-.containerPolitique{
-    /* background-color: blue; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4%;
+.containerPolitique {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+  padding: 0 10px;
 }
-.containerPolitiqueOnglets{
-    /* background-color: pink; */
+
+.containerPolitiqueOnglets {
+  /* background-color: bisque; */
+  width: 50%;
+  /* overflow-x: auto;        ✅ Permet le scroll horizontal si besoin */
 }
-.onglets{
-    background-color: whitesmoke;
-    width: 100%;
-    padding: 0 5px 0 5px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 2px;
+
+.onglets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  width: max-content;      /* ✅ S’adapte à la largeur de tous les boutons */
+  min-width: 100%;         /* ✅ Empêche de casser sur petits écrans */
 }
-.onglets > button{
-    border: whitesmoke solid 1px;
-    background-color: whitesmoke;
-    flex-wrap: wrap;
-    padding: 1%;
-    width: 100px;
-}
- .btn-tab {
-    border: whitesmoke solid 1px;
-    background-color: whitesmoke;
-    cursor: pointer;
+
+.onglets > button {
+  border: none;
+  background-color: whitesmoke;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;     /* ✅ Empêche les retours à la ligne dans les boutons */
+  flex: 0 0 auto;          /* ✅ Garde les boutons en ligne sans forcer le wrap */
+  transition: background-color 0.3s ease;
 }
 
 .btn-tab.active {
-    border: white solid 1px;
-    background-color: white;
-    cursor: pointer;
-    padding: 1.5%;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Politique responsive mobile */
+  /* ====== PolitiqueHook.css (Responsive navbar horizontale) ====== */
+  /* 📱 Pour écrans <= 500px */
+@media (max-width: 500px) {
+  .containerPolitiqueOnglets {
+    width: 75%;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .containerPolitiqueOnglets::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  .onglets {
+    justify-content: flex-start;
+  }
+}
+

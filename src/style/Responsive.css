@@ -1,0 +1,120 @@
+/* Responsive de la navbar mobile */
+
+/* ✅ Responsive : petits écrans */
+@media (max-width: 360px) {
+  .DownContainerNav {
+    width: 85%;
+    padding: 15px;
+  }
+
+  .containerDownload > button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+/* Responsive Nos tarifs prix des abonnements */
+/* ========== Responsive pour la page Tarifs ========== */
+
+/* ✅ Espace au-dessus du composant */
+.containerComponentTarif {
+  margin-top: 100px;
+}
+
+/* ✅ Layout par défaut (mobile first — jusqu’à 599px inclus) */
+.ContainerCardPrix {
+  width: 90%;
+  margin: 5% auto;
+  padding: 20px;
+
+  height: auto;                  /* ✅ Hauteur dynamique */
+  min-height: 400px;            /* ✅ Hauteur minimum pour garder structure */
+  max-height: 100dvh;           /* ✅ Empêche de dépasser l'écran visible */
+  box-sizing: border-box;       /* ✅ Prend en compte padding */
+  overflow: hidden;             /* ✅ Évite les débordements visibles */
+}
+
+.sectionForfaits > h1 {
+  font-size: 22px;
+}
+
+.sectionButton > button {
+  font-size: 14px;
+  width: 100%;
+}
+
+/* ✅ Petits écrans très réduits (ex: iPhone SE ou anciens Androids) */
+@media (max-width: 360px) {
+  .ContainerCardPrix {
+    padding: 15px;
+  }
+
+  .sectionForfaits > h1 {
+    font-size: 20px;
+  }
+
+  .sectionButton > button {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+/* ✅ Tablettes & petits laptops */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .ContainerCardPrix {
+    width: 45%;
+    margin: 3% auto;
+    min-height: 900px;
+    height: auto;
+  }
+
+  .alignCard {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .sectionForfaits > h1 {
+    font-size: 28px;
+  }
+
+  .sectionButton > button {
+    font-size: 15px;
+  }
+}
+
+/* Téléphone test1 */
+@media (min-width: 200px) and (max-width: 1024px) {
+  .ContainerCardPrix {
+    /* background-color: red; */
+    width: 45%;
+    margin: 3% auto;
+    min-height: 450px;
+    height: auto;
+  }
+}
+
+/* ✅ Écrans larges (desktops) */
+@media (min-width: 1025px) {
+  .ContainerCardPrix {
+    width: 300px;
+    height: auto;
+    min-height: 350px;
+    margin: 2% 0;
+  }
+
+  .alignCard {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .sectionForfaits > h1 {
+    font-size: 32px;
+  }
+
+  .sectionButton > button {
+    font-size: 16px;
+  }
+}

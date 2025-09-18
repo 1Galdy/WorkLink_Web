@@ -68,4 +68,4 @@ export default function StatistiqueScreen({id, icon, alt, number, texte, more}){
             </div>
         </div>
     );
-}
+} 

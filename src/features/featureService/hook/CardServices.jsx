@@ -29,6 +29,6 @@ export default function CardServices({title, details, options, image, descriptio
 
             </div>
 
-        </div>
+        </div> 
     );
 }

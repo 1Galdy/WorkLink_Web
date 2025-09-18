@@ -1,5 +1,5 @@
 import '../styles/Tarifs.css';
-
+ 
 //components
 import CardPrix from '../components/CardPrix';
 
@@ -11,5 +11,5 @@ export default function TarifsScreen(){
                 <CardPrix />
             </div>
         </div>
-    );
+    ); 
 }

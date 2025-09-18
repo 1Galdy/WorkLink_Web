@@ -4,16 +4,16 @@
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 70%;
     padding: auto;
     margin: auto;
 }
 .CardContact{
-    border: lightgray solid 1px;
+    border: lightgray solid 1px; 
     text-align: center;
     width: 18%;
-    height: 13.5vh;
+    height: 100px;
     padding: 2%;
     font-size: 10px;
     /* background-color: yellow; */
@@ -24,4 +24,22 @@
 }
 .fontSize{
     font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .ContainerContact {
+    flex-wrap: wrap; /* Permet le retour à la ligne */
+    justify-content: center; /* Centre les éléments */
+    gap: 20px;
+  }
+
+  .CardContact {
+    width: 40%; /* Deux cartes par ligne */
+  }
+}
+
+@media (max-width: 600px) {
+  .CardContact {
+    width: 80%; /* Une seule carte par ligne */
+  }
 }

@@ -15,4 +15,4 @@ export default function Statistiques({id, icon, alt, number, text, more}){
             </div>
         </div>
     );
-}
+} 

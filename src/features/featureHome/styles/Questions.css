@@ -1,35 +1,31 @@
 .questionListe {
   border-bottom: solid lightgray 1px;
-  padding-bottom: 1%;
+  padding: 1.2em 0;
   width: 60%;
-  margin: auto;
-  padding: auto;
+  margin: 0 auto;
+  white-space: normal; /* ✅ Permet au texte de passer à la ligne */
+  word-wrap: break-word; /* ✅ Coupe les mots longs si besoin */
 }
 
+/* Comportement du résumé */
 summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  /* background-color: #f0f0f0; */
   font-weight: bold;
   list-style: none;
   width: 100%;
-  /* padding: 0.5em 1em; */
+  font-size: 1rem;
+  padding: 0.6em 0;
 }
 
-/* Cache la flèche native */
+/* Supprime la flèche native */
 summary::-webkit-details-marker {
   display: none;
 }
 
-/* S'assure que le texte prend tout l'espace dispo à gauche */
-summary span {
-  flex-grow: 1;
-  text-align: left;
-}
-
-/* Flèche à droite */
+/* Icône de flèche personnalisée */
 summary::after {
   content: '▶';
   transition: transform 0.3s;
@@ -37,7 +33,47 @@ summary::after {
   flex-shrink: 0;
 }
 
-/* Flèche tournée quand ouvert */
+/* Rotation de la flèche quand ouvert */
 details[open] summary::after {
   transform: rotate(90deg);
+}
+
+/* Texte à l'intérieur */
+details p {
+  margin-top: 0.5em;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* ✅ RESPONSIVE — petits écrans */
+@media (max-width: 768px) {
+  .questionListe {
+    width: 90%;
+  }
+
+  summary {
+    font-size: 0.95rem;
+  }
+
+  details p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  summary {
+    font-size: 0.9rem;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  summary::after {
+    font-size: 0.9rem;
+    margin-left: 0.5em;
+  }
+
+  details p {
+    font-size: 0.85rem;
+  }
 }

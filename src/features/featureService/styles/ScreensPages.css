@@ -1,40 +1,104 @@
-.topPagesService{
-    margin-top: 5%;
-    /* background-color: green; */
-    width: 85%;
-}
-.flexService{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 36vh;
-}
-.DetailsServices{
-    /* background-color: red; */
-    width: 46%;
+/* ========== Mobile First ========== */
+
+.topPagesService {
+  margin-top: 5%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.DetailsServices > ul {
-    /* background-color: gray; */
-    padding: 0;
+.flexService {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.list-item{
-    display: flex;
+
+/* ========== Mobile (200px à 349px) ========== */
+@media (min-width: 200px) {
+  .DetailsServices,
+  .ImageService {
+    margin-left: 11.5%;
+    width: 77%;
+  }
+
+  .ImageService > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* ========== Mobile (350px à 599px) ========== */
+@media (min-width: 200px) {
+
+  .ImageService {
+    /* background-color: red; */
+    margin-left: 15%;
+    width: 70%;
+  }
+  .DetailsServices {
+    /* background-color: orangered; */
+    margin-left: 15%;
+    width: 70%;
+  }
+}
+
+/* ========== Tablette (600px à 1023px) ========== */
+@media (min-width: 600px) {
+  .topPagesService {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flexService {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .DetailsServices {
+    width: 48%;
+    margin-left: 0;
+  }
+
+  .ImageService {
+    width: 48%;
+    margin-left: 0;
+  }
+
+  .ImageService > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
-.ImageService{
-    /* background-color: purple; */
-    /* padding: 1%; */
+
+/* ========== Desktop (>= 1024px) ========== */
+@media (min-width: 1024px) {
+  .topPagesService {
+    width: 85%;
+  }
+
+  .flexService {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .DetailsServices {
+    width: 46%;
+  }
+
+  .ImageService {
     width: 50%;
-    height: 100%;
-}
-.ImageService > img {
-    margin-top: 1.6%;
-    width: 96%;
+  }
+
+  .ImageService > img {
     height: 95%;
+    margin-top: 1.6%;
     margin-left: 2%;
-    /* object-fit: contain;       Affiche toute l'image sans la couper */
-    /* object-position: center;   Centre l'image dans son conteneur */
-    /* display: block;            Supprime les espaces blancs sous l'image */
+    object-fit: contain;
+  }
 }

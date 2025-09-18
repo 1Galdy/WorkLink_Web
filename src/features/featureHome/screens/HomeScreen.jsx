@@ -2,6 +2,7 @@ import CardHome from "../components/Card";
 import '../styles/HomeScreen.css'
 import QuestionList from "../components/questions";
 
+
 export default function HomeScreen(){
     return(
         <>

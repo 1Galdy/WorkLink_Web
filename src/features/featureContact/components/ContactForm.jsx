@@ -5,7 +5,7 @@ import HookForm from '../hook/HookForm';
 
 export default function ContactForm(){
     return(
-      <div>
+      <div className='ContactForm'>
             <div className='bgImage formTop'></div>
 
             <div className='containerForm formTop'>
@@ -13,4 +13,4 @@ export default function ContactForm(){
             </div>
       </div>  
     );
-}
+} 

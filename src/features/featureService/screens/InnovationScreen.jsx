@@ -2,7 +2,7 @@ import '../styles/ScreensPages.css';
 
 //Hook card pages politique
 import CardServices from "../hook/CardServices";
-
+ 
 export default function InnovationScreen(){
 
     const datas = 
@@ -24,4 +24,4 @@ export default function InnovationScreen(){
         <CardServices title={datas.title} details={datas.details} options={datas.list} image={datas.image} description={datas.description}/>
         </>
     );
-}
+} 

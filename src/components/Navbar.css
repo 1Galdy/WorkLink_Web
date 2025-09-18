@@ -22,12 +22,17 @@ img{
 }
 .containerOnglets{
     /* background-color: blue; */
-    width: 30%;
+    /* width: 30%; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;         /* 🛑 Empêche les retours à la ligne */
+    width: auto;        /* ✅ Laisse la largeur s’adapter */
+    max-width: 100%;    /* ✅ Évite de déborder */
+    gap: 12px;          /* ✅ Ajoute un peu d’espace si besoin */
 }
 .containerDownload{
+    /* background-color: purple; */
     margin-right: 1%;
 }
  .containerDownload > button{
@@ -52,4 +57,31 @@ img{
   background-color: rgb(75, 109, 114);
   color: white;
   border-radius: 5px;
+}
+
+/* ----------------- Responsive --------------- */
+@media (max-width: 584px) {
+  .containerOnglets {
+    /* background-color: pink; */
+    display: grid; /* ✅ Active CSS Grid */
+    grid-template-columns: repeat(2, auto); /* ✅ 2 colonnes de taille égale */
+    grid-template-rows: repeat(2, auto);  /* ✅ 2 lignes automatiques */
+    gap: 12px; /* ✅ Espace entre les éléments */
+    padding: 1%;
+  }
+  .nav-link {
+    white-space: nowrap; /* ✅ Le texte ne se coupe pas à la ligne */
+  } 
+  .containerOnglets > *:nth-child(4) {
+    /* background-color: red; */
+    width: 31%;
+  }
+  .containerOnglets > *:nth-child(3) {
+    /* background-color: red; */
+    width: 55%;
+  }
+  .containerDownload{
+    background-color: purple;
+    margin-right: 3%;
+}
 }

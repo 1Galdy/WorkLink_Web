@@ -43,8 +43,3 @@ export default function QuestionList(){
         </div>
     )
 }
-
-{/*<details>
-    <summary>Qu'est ce que WorkLink ?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </details>*/}

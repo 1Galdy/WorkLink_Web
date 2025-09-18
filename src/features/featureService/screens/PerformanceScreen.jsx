@@ -24,4 +24,4 @@ export default function PerformanceScreen(){
             <CardServices title={datas.title} details={datas.details} options={datas.list} image={datas.image} description={datas.description}/>
             </>
         );
-}
+} 

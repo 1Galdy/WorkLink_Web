@@ -1,10 +1,17 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: ['740d153688a2.ngrok-free.app', 'localhost']
-  }
+    host: true, // 👈 Permet d'exposer au réseau local
+    allowedHosts: ['.ngrok-free.app', 'localhost']
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
 })

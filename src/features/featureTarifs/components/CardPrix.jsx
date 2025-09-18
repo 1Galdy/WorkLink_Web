@@ -1,5 +1,5 @@
 import '../styles/CardPrix.css';
-
+ 
 export default function CardPrix(){
 
     const forfaits = [
@@ -38,7 +38,7 @@ export default function CardPrix(){
         },
     ]
 
-    return(
+    return( 
         <>
             {forfaits.map(item => (
                 <div className='ContainerCardPrix'>

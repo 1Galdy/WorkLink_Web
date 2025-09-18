@@ -1,15 +1,19 @@
 .borderContainer{
     padding: 2%;
     border: lightgray solid 1px;
-    width: 27%;
-    height: 29vh;
+    width: 27%; /* reste valide pour desktop */
+    min-width: 250px; /* empêche les trop petites tailles */
+    height: auto;
 }
 .contentCenter{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 2% 0;
+    padding: 0 0 2% 0; 
     /* background-color: yellow; */
+} 
+.contentCenter > p {
+    text-align: center;
 }
 .contentCenter > h3{
     font-size: 25px;
@@ -31,3 +35,38 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+/* 📱 Mobile : 1 colonne */
+@media (max-width: 767px) {
+  .importCard {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .borderContainer {
+    width: 100% !important;
+  }
+
+  .MoreIcons {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+/* 💻 Tablette : 2 colonnes */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .borderContainer {
+    width: 48%; /* deux cartes côte à côte avec petit gap */
+  }
+
+  .importCard {
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .MoreIcons {
+    justify-content: space-around;
+  }
+}
+
+/* 🖥️ Desktop : déjà correct (27%) */

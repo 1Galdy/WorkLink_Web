@@ -2,6 +2,7 @@ import { useState } from "react";
 
 // Style css
 import '../styles/PolitiqueHook.css';
+// import '../../../style/Responsive.css';
 
 // Mes Screens
 import InnovationScreen from "../screens/InnovationScreen";
@@ -25,7 +26,7 @@ export default function PolitiqueHook() {
       default:
         return <InnovationScreen />;
     }
-  };
+  }; 
 
   return (
     <div className="containerPolitique">

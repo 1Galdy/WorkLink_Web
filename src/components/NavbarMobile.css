@@ -1,0 +1,50 @@
+.containerNavMobile{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: black solid 1px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 2%;
+    position: fixed;
+    width: 96%;
+}
+.DownContainerNav {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 89px; /* Ajuste selon la hauteur de ta navbar */
+  right: 0; /* ✅ Colle à droite */
+  width: 60%; /* ✅ Largeur raisonnable */
+  max-width: 150px;
+  height: auto;
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 0 0 10px 10px; /* ✅ Coins arrondis à gauche uniquement */
+}
+.containerDownload > button {
+  background-color: rgb(75, 109, 114);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  /* border-radius: 5px; */
+  width: 100%;
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+/* Onglets nav mobile */
+.ongletNavMobile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}

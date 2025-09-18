@@ -16,15 +16,42 @@
     margin: auto;
 }
 .formTop{
-    margin-top: 5%;
+    margin-top: 5%; 
 }
-
+/* ✅ Écrans larges */
 @media (min-width: 1280px) {
-    .bgImage{
-    /* background-color: gray; */
+  .bgImage {
     height: 50vh;
     background-size: 100% 350px;
-    background-repeat: no-repeat;
+  }
+}
+
+/* ✅ Responsive tablette (<= 768px) */
+@media (max-width: 768px) {
+  .bgImage {
+    width: 90%;
+    background-size: cover;
+    height: 35vh;
+  }
+
+  .containerForm {
+    width: 85%;
+    padding: 20px;
+  }
+}
+
+/* ✅ Responsive mobile (<= 480px) */
+@media (max-width: 480px) {
+  .bgImage {
+    width: 95%;
+    height: 30vh;
+    background-size: cover;
     background-position: center;
-    }
+  }
+
+  .containerForm {
+    /* background: red; */
+    width: 85%;
+    padding: 15px;
+  }
 }

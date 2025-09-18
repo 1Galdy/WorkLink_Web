@@ -28,7 +28,15 @@ export default function Navbar() {
         >
           Accueil
         </NavLink>
-        <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/services">Ce que nous proposons</NavLink>
+        <NavLink
+  to="/services"
+  className={({ isActive }) =>
+    `nav-link ${isActive ? "active-link" : ""} custom-class`
+  }
+>
+  Ce que nous proposons
+</NavLink>
+
         <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/tarifs">Tarifs</NavLink>
         <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/contact">Contact</NavLink>
       </div>

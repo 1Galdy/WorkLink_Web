@@ -9,5 +9,5 @@ export default function Politique(){
             <h1>Ce que nous proposons</h1>
             <PolitiqueHook />
         </div>
-    );
-}
+    ); 
+} 
