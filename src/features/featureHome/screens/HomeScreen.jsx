@@ -9,7 +9,7 @@ export default function HomeScreen(){
             <div className="containerScreen spaceContainer">
                 <div className="containerWelcome">
                     <h2>Bienvenue sur WorkLink</h2>
-                    <p>Votre plateforme ultime pour les connexions professionnelles.</p>
+                    <p className="centerHome">Votre plateforme ultime pour les connexions professionnelles.</p>
                 </div>
                 <div className="containerCard">
                     <h1 className="screenH1">Les Membres de WorkLink</h1>

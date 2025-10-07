@@ -1,9 +1,14 @@
 // import '../styles/ScreensPages.css';
 
+import { useState } from "react";
+
 //Import Icons
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 
 export default function CardServices({title, details, options, image, description}){
+
+    const [loaded, setLoaded] = useState(false);
+
     const icon = <CheckCircleOutlineOutlinedIcon />
     return(
         <div className='topPagesService'>
@@ -22,9 +27,9 @@ export default function CardServices({title, details, options, image, descriptio
                         ))}
                     </ul>
                 </div>
-
+ 
                 <div className='ImageService'>
-                    <img src={image} alt={description} />
+                    <img src={image} loading="lazy" alt={description} className={loaded ? "loaded" : ""} onLoad={() => setLoaded(true)} />
                 </div>
 
             </div>

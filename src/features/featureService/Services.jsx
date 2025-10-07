@@ -7,7 +7,7 @@ import StatistiqueScreen from './screens/StatistiqueScreen';
 export default function Service(){
     return(
         <>
-            <div className="spaceContainer">
+            <div className="spaceContainer sizeService">
                 <Politique />
                 <StatistiqueScreen />
             </div>

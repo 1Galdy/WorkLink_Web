@@ -5,6 +5,7 @@
   align-items: center;
   margin-top: 4%;
   padding: 0 10px;
+  width: 95%;
 }
 
 .containerPolitiqueOnglets {
@@ -35,6 +36,7 @@
   white-space: nowrap;     /* ✅ Empêche les retours à la ligne dans les boutons */
   flex: 0 0 auto;          /* ✅ Garde les boutons en ligne sans forcer le wrap */
   transition: background-color 0.3s ease;
+  color: black;
 }
 
 .btn-tab.active {

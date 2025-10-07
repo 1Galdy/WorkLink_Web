@@ -47,3 +47,8 @@
     flex-wrap: wrap;
     list-style: none;
 }
+.sectionForfaits ul > li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

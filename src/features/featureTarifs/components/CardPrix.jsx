@@ -1,4 +1,8 @@
 import '../styles/CardPrix.css';
+
+// Mes icons
+import DoneIcon from '@mui/icons-material/Done';
+import CloseIcon from '@mui/icons-material/Close';
  
 export default function CardPrix(){
 
@@ -7,34 +11,39 @@ export default function CardPrix(){
             id: 1,
             plan: "Plan Gratuit",
             prix: "0 € / mois",
-            service1: "✅ Accès de base à la plateforme",
-            service2: "✅ Accès au offres d'emplois",
-            service3: "✅ Chat sous conditions",
-            service4: "❌ Pas de coatching",
-            service5: "❌ Pas de suivie",
-            service6: "❌ Pas de profil certifié",
+            service1: (
+                <>
+                    <DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />
+                    Accès de base à la plateforme
+                </>
+            ),
+            service2: (<><DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />Accès au offres d'emplois</>),
+            service3: (<><DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />Chat sous conditions</>),
+            service4: (<><CloseIcon style={{ color: 'rgb(239, 68, 68)'  }} />Pas de coatching</>),
+            service5: (<><CloseIcon style={{ color: 'rgb(239, 68, 68)' }} />Pas de suivie</>),
+            service6: (<><CloseIcon style={{ color: 'rgb(239, 68, 68)' }} />Pas de profil certifié</>),
         },
         {
             id: 2,
             plan: "Plan Affaires",
             prix: "30 € / mois",
-            service1: "✅ Tous les services du plan Gratuit",
-            service2: "✅ Profil certifié",
-            service3: "✅ Coatching et accompagnement",
-            service4: "✅ Suivie et aide jusqu'au contrat",
-            service5: "❌ Session personnalisé",
-            service6: "❌ Mise en relation entreprises",
+            service1: (<><DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />Tous les services du plan Gratuit</>),
+            service2: (<><DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />Profil certifié</>),
+            service3: (<><DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />Coatching et accompagnement</>),
+            service4: (<><DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />Suivie et aide jusqu'au contrat</>),
+            service5: (<><CloseIcon style={{ color: 'rgb(239, 68, 68)' }} />Session personnalisé</>),
+            service6: (<><CloseIcon style={{ color: 'rgb(239, 68, 68)' }} />Mise en relation entreprises</>),
         },
         {
             id: 3,
             plan: "Plan Or",
             prix: "90 € / mois",
-            service1: "✅ Tous les services du plan Affaires",
-            service2: "✅ Recommandation des profil",
-            service3: "✅ Mise en relation entreprises",
-            service4: "✅ Mise à niveau des profils",
-            service5: "✅ Evaluation des compétences",
-            service6: "✅ Orientation et conseil",
+            service1: (<><DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />Tous les services du plan Affaires</>),
+            service2: (<><DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />Recommandation des profil</>),
+            service3: (<><DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />Mise en relation entreprises</>),
+            service4: (<><DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />Mise à niveau des profils</>),
+            service5: (<><DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />Evaluation des compétences</>),
+            service6: (<><DoneIcon style={{ color: 'rgb(34, 197, 94)' }} />Orientation et conseil</>),
         },
     ]
 

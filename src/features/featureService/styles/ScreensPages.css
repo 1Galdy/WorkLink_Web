@@ -1,16 +1,43 @@
 /* ========== Mobile First ========== */
-
+ 
 .topPagesService {
+  /* background-color: red; */
   margin-top: 5%;
   width: 100%;
   box-sizing: border-box;
+  padding: 0;
 }
 
 .flexService {
+  /* background-color: purple; */
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
+.DetailsServices > ul{
+  list-style: none;
+  /* background-color: red; */
+}
+
+.DetailsServices > ul > li {
+  display: flex;
+  align-items: center; /* Centrage vertical */
+  gap: 8px;            /* Espacement entre l’icône et le texte (ajuste au besoin) */
+  transform: translateX(-10%);
+}
+
+/* Animation CSS pour rendre l'affichage d'image plus fluide */
+
+.ImageService img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.ImageService img.loaded {
+  opacity: 1;
+}
+
 
 /* ========== Mobile (200px à 349px) ========== */
 @media (min-width: 200px) {

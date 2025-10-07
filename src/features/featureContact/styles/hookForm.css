@@ -32,4 +32,42 @@
     border: rgb(75, 109, 114) solid 1px;
     background-color: rgb(75, 109, 114);
     color: white;
+    cursor: pointer;
 }
+
+.formulaire > form > button:hover{
+    background-color: rgb(38, 55, 58);
+}
+
+/* Cela empêche iOS de zoomer automatiquement sur les champs quand l'utilisateur clique dessus. */
+input[type="text"],
+textarea {
+  font-size: 16px;
+}
+
+
+@media (min-width: 200px) and (max-width: 1024px) {
+    .containerInput > section > input[type=text] {
+        padding: 10%; 
+    }
+    .containerInput > section > input[type=text]:focus{
+        border-color: rgb(75, 109, 114) !important;
+    }
+    .formulaire > form > input[type=text]{
+        padding: 5%; 
+    }
+    .formulaire > form > input[type=text]:focus{
+        border-color: rgb(75, 109, 114) !important;
+    }
+    .formulaire > form > button{
+        padding: 4%;
+    }
+}
+
+/* arder des petites tailles de texte sur desktop */
+/* @media (max-width: 768px) {
+  input[type="text"],
+  textarea {
+    font-size: 16px;
+  }
+} */

@@ -38,7 +38,7 @@ function App() {
       </BrowserRouter>
       <Footer />
       {/* À commenter une fois le responsive terminé, il sert uniquement à afficher la taille (dimension) de l'écran sur lequel on se trouve */}
-      <WidthComponent />
+      {/* <WidthComponent /> */}
     </>
   )
 }

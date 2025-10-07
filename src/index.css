@@ -10,3 +10,70 @@ body::-webkit-scrollbar {
 .spaceContainer{
   padding-top: 6%;
 }
+
+/* Responsive de la navbar mobile */
+
+/* ✅ Responsive : petits écrans */
+@media (max-width: 360px) {
+  .spaceContainer{
+    padding-top: 6%;
+    /* color: red; */
+  }
+}
+
+/* ✅ Tablettes & petits laptops */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .spaceContainer{
+    padding-top: 6%;
+    /* color: green; */
+  }
+}
+
+/* Téléphone test1 */
+@media (min-width: 200px) and (max-width: 1024px) {
+  .spaceContainer{
+    padding-top: 15%;
+    /* color: brown; */
+  }
+  .centerHome{
+    text-align: center;
+  }
+  .containerComponentTarif{
+    margin-top: 2% !important;
+    /* background-color: purple; */
+  }
+  .containerStatistique{
+    /* background-color: black; */
+    margin-top: 25% !important;
+  }
+
+   /* ScrennsPages */
+   
+  .DetailsServices > ul > li {
+    /* background-color: red; */
+    transform: translateX(-19%) !important;
+  }
+
+  /* PolitiqueHook */
+
+  .containerPolitiqueOnglets {
+  /* background-color: bisque; */
+    width: 90% !important;
+  }
+}
+
+/* ✅ Écrans larges (desktops) */
+@media (min-width: 1025px) {
+  .spaceContainer{
+    padding-top: 6%;
+    /* color: pink; */
+  }
+}
+
+/* ✅ Écrans moyen (desktops) */
+@media (min-width: 1536px) {
+  .spaceContainer{
+    padding-top: 3%;
+    /* color: yellow; */
+  }
+}

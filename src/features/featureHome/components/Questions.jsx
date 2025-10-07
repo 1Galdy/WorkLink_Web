@@ -1,6 +1,19 @@
+//Utilisation des Hooks
+import { useState } from 'react';
+
+//Mon CSS
 import '../styles/Questions.css';
 
+//Icons 
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+
 export default function QuestionList(){
+
+    const [openId, setOpenId] = useState(null);
+
+    const toggle = (id) => {
+    setOpenId(prev => (prev === id ? null : id));
+  };
 
     const questions = [
         {
@@ -30,16 +43,27 @@ export default function QuestionList(){
         },
     ]
 
-    return(
-        <div className='marginTop'>
-            {questions.map(item => (
-                <div className="questionListe" style={{marginTop: '1%'}}>
-                    <details key={item.id}>
-                        <summary>{item.question}</summary>
-                        <p>{item.instruction}</p>
-                    </details>
-                </div>
-            ))}   
+    return (
+    <div className='marginTop'>
+      {questions.map((item) => (
+        <div className="questionListe" key={item.id}>
+          <div
+            className="summaryRow"
+            onClick={() => toggle(item.id)}
+          >
+            <span>{item.question}</span>
+            <KeyboardArrowRightIcon
+              style={{
+                transform: openId === item.id ? 'rotate(90deg)' : 'rotate(0deg)',
+                transition: 'transform 0.3s ease',
+              }}
+            />
+          </div>
+          {openId === item.id && (
+            <p className="instruction">{item.instruction}</p>
+          )}
         </div>
-    )
+      ))}
+    </div>
+  );
 }

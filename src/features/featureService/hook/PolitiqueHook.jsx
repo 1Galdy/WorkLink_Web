@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Style css
 import '../styles/PolitiqueHook.css';
@@ -12,6 +12,21 @@ import SupportScreen from "../screens/SupportScreen";
 
 export default function PolitiqueHook() {
   const [onglet, setOnglet] = useState("Innovation");
+
+  // Préchargement des images au montage
+  useEffect(() => {
+    const imagesToPreload = [
+      "/Innovation.jpg",
+      "/Security.jpg",
+      "/Performance.jpg",
+      "/Support.jpg",
+    ];
+
+    imagesToPreload.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
 
   const renderScreen = () => {
     switch (onglet) {

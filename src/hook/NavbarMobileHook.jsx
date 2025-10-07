@@ -13,7 +13,7 @@ import '../style/NavHook.css';
 
 export default function DropDown(){
   const [status, setStatus] = useState(false);
-  const [title, setTitle] = useState("open");
+  const [title, setTitle] = useState(<MenuOutlinedIcon sx={{ fontSize: 40 }} style={{ color: "rgb(75, 109, 114)" }} />);
   const [visible, setVisible] = useState(false);
   
   const toggle = (e) => {
@@ -23,8 +23,8 @@ export default function DropDown(){
   
   useEffect(()=> {
     {status === true ? 
-      setTitle(<CloseOutlinedIcon sx={{ fontSize: 40 }} />) : 
-         setTitle(<MenuOutlinedIcon sx={{ fontSize: 40 }} />)
+      setTitle(<CloseOutlinedIcon sx={{ fontSize: 40 }} style={{color: "rgb(75, 109, 114)"}} />) : 
+         setTitle(<MenuOutlinedIcon sx={{ fontSize: 40 }} style={{color: "rgb(75, 109, 114)"}} />)
     }
   }, [status]);
 
