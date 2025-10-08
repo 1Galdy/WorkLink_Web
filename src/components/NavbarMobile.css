@@ -9,6 +9,7 @@
     padding: 2%;
     position: fixed;
     width: 96%;
+    z-index: 2;
 }
 .DownContainerNav {
   background-color: rgb(255, 255, 255);

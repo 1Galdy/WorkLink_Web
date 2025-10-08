@@ -11,6 +11,7 @@
     padding-top: 4px;
     position: fixed;
     width: 96%;
+    z-index: 2;
 }
 /* .containerImg{
     background-color: red;
